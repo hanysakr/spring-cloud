@@ -1,0 +1,16 @@
+server:
+  port: 9091
+  
+spring:
+  application:
+    name: EmployeeEurekaServer
+ 
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url: 
+      defaultZone: http://localhost:${server.port}/eureka/
+
+
+  
